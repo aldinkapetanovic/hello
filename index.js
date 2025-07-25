@@ -17,7 +17,7 @@ const short_sha = process.env.SHORT_SHA.slice(0, 7)
 // spec:
 //   externalTrafficPolicy: Local
 
-app.enable('trust proxy');
+// app.enable('trust proxy');
 
 app.disable("x-powered-by")
 app.use(morgan('combined'))
