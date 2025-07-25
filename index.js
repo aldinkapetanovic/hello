@@ -7,7 +7,7 @@ const app = express()
 const hostname = _hostname()
 const port = process.env.PORT || 3000
 // const short_sha = process.env.SHORT_SHA
-const short_sha = process.env.SHORT_SHA.slice(0, 7)
+// const short_sha = process.env.SHORT_SHA.slice(0, 7)
 
 
 // kind: Service
@@ -82,10 +82,8 @@ app.get('/', (req, res) => {
 
     <body>
         <div>
-            <h1>${hostname} 🌐</h1>
-            <p>Hello, I am your Docker container! 🐳</p>
+            <p>Hello, my name is ${hostname}! 🐳</p>
             <p>Node.js Version: <span class="highlight">${nodeVersion}</span> 🚀</p>
-            <p>Commit: <span class="highlight">${short_sha}</span> #️⃣</p>
         </div>
     </body>
 
