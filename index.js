@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
 
     <body>
         <div>
-            <p>Hello, my name is ${hostname}! 🐳</p>
+            <p>Hi, my name is <span class="highlight">${hostname}!</span> 🐳</p>
             <p>Node.js Version: <span class="highlight">${nodeVersion}</span> 🚀</p>
         </div>
     </body>
